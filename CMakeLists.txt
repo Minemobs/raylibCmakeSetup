@@ -3,7 +3,8 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 #! ! ! ! ! ! !
 #set this to true to ship the game!
@@ -33,7 +34,7 @@ project(mygame)
 
 
 #Add raylib, and here you would add other libraries if needed!
-add_subdirectory(thirdparty/raylib-5.0)
+add_subdirectory(thirdparty/raylib)
 add_subdirectory(thirdparty/imgui-docking)
 add_subdirectory(thirdparty/rlImGui)
 

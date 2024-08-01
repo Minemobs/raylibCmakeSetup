@@ -4,7 +4,7 @@
 #pragma region imgui
 #include "imgui.h"
 #include "rlImGui.h"
-#include "imguiThemes.h"
+// #include "imguiThemes.h"
 #pragma endregion
 
 
@@ -23,7 +23,7 @@ int main(void)
 	//ImGui::StyleColorsDark();
 	//imguiThemes::yellow();
 	//imguiThemes::gray();
-	imguiThemes::green();
+	// imguiThemes::green();
 	//imguiThemes::red();
 	//imguiThemes::embraceTheDarkness();
 
@@ -56,7 +56,8 @@ int main(void)
 
 		ImGui::PushStyleColor(ImGuiCol_WindowBg, {});
 		ImGui::PushStyleColor(ImGuiCol_DockingEmptyBg, {});
-		ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+		// ImGui::DockSpaceOverViewport(ImGui::GetMainViewport());
+		ImGui::DockSpaceOverViewport();
 		ImGui::PopStyleColor(2);
 	#pragma endregion
 
